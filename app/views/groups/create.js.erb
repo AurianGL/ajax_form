@@ -1,0 +1,5 @@
+<% if @group.errors.any? %>
+  # Handle errors
+<% else %>
+  console.log('<%= escape_javascript(render '/members/form', locals: {member: Member.new}, layout: false ) %>')
+<% end %>
